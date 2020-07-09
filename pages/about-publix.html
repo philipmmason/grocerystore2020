@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<!-- the topic this term is Grocery Store. 
+This is the continuation of the website for chapter 2. I will be adding the elements from chapter 2 before expanding the functionality of the 
+site. This will be the about us page for the Publix Website.-->
+
+
+<html lang="en">
+    <head>
+        <!-- meta tags for the webpage itself -->
+        <meta charset="utf-8">
+        <meta name="description" content="Unit 1 Homework">
+        <meta name="keywords" content="Unit 1, HTML">
+        <meta name="author" content="Philip M. Mason">
+        <title>Publix Grocery Store</title>
+        
+        <!-- Added icon to browser tab -->
+        <link rel="icon" href="../pages/publix-logo2.png">
+        
+        <!-- This is the viewport element which specific scaling sense so many different size devices are used to search the web.
+        This will be modified in the next unit to parallax webpage tiles over a background. The tiles will have the content such as
+        information, images, links, etc.-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="homework2js.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        
+        <!-- 
+        <div class="navigation-column">
+            
+            <!-- will be moving these to the navigation collumn 
+            <a href="home.html">Home</a>&nbsp; | &nbsp;
+            <a href="about-publix.html">About Us</a>&nbsp; | &nbsp;
+            <a href="contact-us.html">Contact</a>
+        </div>
+        -->
+
+        <!-- Navigation column. Click on the icon to open navigation column at left side of page. -->
+        <section class="top-banner">
+            
+            <div id="navigationColumn" class="navigationColumn">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="home.html">Home</a>
+                <a href="bakery-department-page.html">Bakery</a>
+                <a href="deli-department-page.html">Deli</a>
+                <a href="produce-department-page.html">Produce</a>
+                <a href="floral-department-page.html">Floral</a>
+                <a href="dairy-department-page.html">Dairy</a>
+                <a href="contact-us.html">Contact</a>
+            </div>
+
+
+            <span style="font-size:30px; padding-bottom: 10%; cursor:pointer" onclick="openNav()">&#9776;</span>
+
+            <script>
+            function openNav() {
+              document.getElementById("navigationColumn").style.width = "200px";
+            }
+
+            function closeNav() {
+              document.getElementById("navigationColumn").style.width = "0";
+            }
+            </script>
+            
+            
+           
+            <div class="navigation">
+                
+                
+                <!-- Login or create an account -->
+                <a href="under-cunstruction.html">Login</a>&nbsp; | &nbsp;
+                <a href="under-cunstruction.html">Create Account</a>&nbsp; | &nbsp;
+                <a href="under-cunstruction.html">Shopping Cart</a>&nbsp;
+                
+                
+
+                
+            </div>
+
+        </section>
+        
+    <div class="head-banner">
+       <h1>
+                <a href="home.html">
+                    <img class="logo-as-letter" src="publix-logo2.png" alt="P">
+                </a>
+                ublix | Where shopping is a pleasure.
+            </h1>
+    </div>
+    <hr>
+    <h2>Publix - The Origin:</h2>
+    <hr>
+
+    <!-- added blockquote here 
+    added superscript for internal link -->
+    <p>
+        If you live in Florida, then you are used to seeing Publix Super Markets as you drive through town but how much about your local Publix Super Market do you know? Publix started provided good to its local community on September 6, 1930 in Winter Haven, Florida by George Jenkins. Mr. Jenkins store was successful enough to survive the Great Depression and 1935 he opened a second store. Over the years the company would continue to grow and by 1956 Publix made its first $1 million profit in a year. This was just the early success and development for Publix and would continue to grow in many ways. I remember a quote from George Jenkins that was posted above the doorway to the employee break room:
+        <blockquote cite="https://blog.publix.com/publix/in-the-words-of-mr-george/"><a href="#quote1"><sup>1</sup></a>“One of the most important lessons I’ve learned in my business career is that no man puts together an organization on his own.”</blockquote>
+        <div class="quote"><strong>-George Jenkins</strong></div>
+    </p>
+    <p>
+        After 3 decades of success Publix began to expand through Florida to eventually become the prominent supermarket. This expansion began in 1959 and this would lead into other projects for Mr. Jenkins. The previous years the store expanded their inner store departments to provide full service to the customers. The stores had full-service bakery and floral departments. These full-service departments are what set Publix above the other grocery stores. IN the years to follow Mr. Jenkins focused on the growth of the company and how to better serve his customers. Over the next 40-year Publix would expand through all of Florida as well as trying a few different types of store. One of these store designs was called Food World where the store was much larger and have a large deli where different type of food from all over the word would be offered. These large Food Worlds were not viable and ended up being converted to large Super Markets, but it was these innovative approaches that made Publix the premier Grocer in Florida. This expansion of Publix is reflected in Mr. Jenkins philosophy:
+
+        <!-- added the pre element though for this instants it is far from the ideal purpose it is meant to be used for. 
+        Added internal link as superscript -->
+        <pre>                                                                                                                             <a href="#quote1" ><sup>2</sup></a>“We’re not only in the grocery business, 
+                                                                                                                               we’re in the people business.”
+                                                        <b>                                                                                 -George Jenkins</b></pre>
+    </p>
+
+    <!-- <sup> added in this paragraph -->
+    <p>
+        As an employee of Publix in my teenage years I remember that Publix had set a goal to open 1000 stores by year 2000. This goal was not met by the turn of the entry but, the focus brought about by this goal help push Publix to cover the footprint that is currently has. It wasn't until 2009 before Publix opened its 1000<sup>th</sup> store and at this time was looking into expanding into other states. Now Publix is proudly servicing its high-quality goods and full-service departments in Georgia, South Carolina, Alabama, Tennessee, North Carolina, and Virginia.  
+    </p>
+
+   
+    
+        <h3>References</h3>
+        <hr>
+        
+        <!-- changed p element to inline -->
+      
+        <inline>
+
+            <a href="http://www.fundinguniverse.com/company-histories/publix-super-markets-inc-history/" style="color: #256b0c;
+    text-decoration: none;">Publix Super Markets Inc.</a> (n.d.). Retrieved June 14, 2020, from http://www.fundinguniverse.com/company-histories/publix-super-markets-inc-history/
+        </inline>
+
+    <br>
+        <inline>
+                <a id="quote1" href="https://blog.publix.com/publix/in-the-words-of-mr-george/" style="color: #256b0c;
+    text-decoration: none;">In The Words of Mr. George | Publix Super Market | The ...</a> (n.d.). Retrieved June 14, 2020, from https://blog.publix.com/publix/in-the-words-of-mr-george/
+        </inline>
+    
+        <br>
+        <br>
+        <!-- Footer using small for fine print disclaimer, -->
+        <footer>
+            <p>
+                <small><strong>*This is not the official website of Publix Super Markets, Inc. This site is purely used for course work by Philip M. Mason at Park University.</strong></small>
+            </p>
+        </footer>
+            
+    </body>
+
+    
+</html>

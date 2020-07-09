@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <!-- meta tags for the webpage itself -->
+        <meta charset="utf-8">
+        <meta name="description" content="Unit 1 Homework">
+        <meta name="keywords" content="Unit 1, HTML">
+        <meta name="author" content="Philip M. Mason">
+        <title>Publix Grocery Store</title>
+        
+        <!-- Added icon to browser tab -->
+        <link rel="icon" href="../pages/publix-logo2.png">
+        
+        <!-- This is the viewport element which specific scaling sense so many different size devices are used to search the web.
+        This will be modified in the next unit to parallax webpage tiles over a background. The tiles will have the content such as
+        information, images, links, etc.-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="homework2js.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        
+        <!-- 
+        <div class="navigation-column">
+            
+            <!-- will be moving these to the navigation collumn 
+            <a href="home.html">Home</a>&nbsp; | &nbsp;
+            <a href="about-publix.html">About Us</a>&nbsp; | &nbsp;
+            <a href="contact-us.html">Contact</a>
+        </div>
+        -->
+
+        <!-- Navigation column. Click on the icon to open navigation column at left side of page. -->
+        <section class="top-banner">
+            
+            <div id="navigationColumn" class="navigationColumn">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="bakery-department-page.html">Bakery</a>
+                <a href="deli-department-page.html">Deli</a>
+                <a href="produce-department-page.html">Produce</a>
+                <a href="floral-department-page.html">Floral</a>
+                <a href="dairy-department-page.html">Dairy</a>
+                <a href="contact-us.html">Contact</a>
+                <a href="about-publix.html">About Us</a>
+            </div>
+
+
+            <span style="font-size:30px; padding-bottom: 10%; cursor:pointer" onclick="openNav()">&#9776;</span>
+
+            <script>
+            function openNav() {
+              document.getElementById("navigationColumn").style.width = "200px";
+            }
+
+            function closeNav() {
+              document.getElementById("navigationColumn").style.width = "0";
+            }
+            </script>
+            
+            
+           
+            <div class="navigation">
+                
+                
+                <!-- Login or create an account -->
+                <a href="under-cunstruction.html">Login</a>&nbsp; | &nbsp;
+                <a href="under-cunstruction.html">Create Account</a>&nbsp; | &nbsp;
+                <a href="under-cunstruction.html">Shopping Cart</a>&nbsp;
+                
+                
+
+                
+            </div>
+
+        </section>
+
+        <div class="head-banner">
+            <h1>
+                <a href="home.html">
+                    <img class="logo-as-letter" src="publix-logo2.png" alt="P">
+                </a>
+                ublix | Where shopping is a pleasure.
+            </h1>
+        </div>
+        <hr style="color: #c74c3f;">
+        <h2>Welcome to the Floral Department</h2>
+        <div class="floral-page-background">  
+           
+        </div>
+    </body>
+</html>

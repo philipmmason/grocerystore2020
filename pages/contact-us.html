@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <!-- meta tags for the webpage itself -->
+        <meta charset="utf-8">
+        <meta name="description" content="Unit 1 Homework">
+        <meta name="keywords" content="Unit 1, HTML">
+        <meta name="author" content="Philip M. Mason">
+        <title>Publix Grocery Store</title>
+        
+        <!-- Added icon to browser tab -->
+        <link rel="icon" href="../pages/publix-logo2.png">
+        
+        <!-- This is the viewport element which specific scaling sense so many different size devices are used to search the web.
+        This will be modified in the next unit to parallax webpage tiles over a background. The tiles will have the content such as
+        information, images, links, etc.-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="homework2js.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        
+        <!-- 
+        <div class="navigation-column">
+            
+            <!-- will be moving these to the navigation collumn 
+            <a href="home.html">Home</a>&nbsp; | &nbsp;
+            <a href="about-publix.html">About Us</a>&nbsp; | &nbsp;
+            <a href="contact-us.html">Contact</a>
+        </div>
+        -->
+
+        <!-- Navigation column. Click on the icon to open navigation column at left side of page. -->
+        <section class="top-banner">
+            
+            <div id="navigationColumn" class="navigationColumn">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="home.html">Home</a>
+                <a href="bakery-department-page.html">Bakery</a>
+                <a href="deli-department-page.html">Deli</a>
+                <a href="produce-department-page.html">Produce</a>
+                <a href="floral-department-page.html">Floral</a>
+                <a href="dairy-department-page.html">Dairy</a>
+                <a href="about-publix.html">About Us</a>
+            </div>
+
+
+            <span style="font-size:30px; padding-bottom: 10%; cursor:pointer" onclick="openNav()">&#9776;</span>
+
+            <script>
+            function openNav() {
+              document.getElementById("navigationColumn").style.width = "200px";
+            }
+
+            function closeNav() {
+              document.getElementById("navigationColumn").style.width = "0";
+            }
+            </script>
+            
+            
+           
+            <div class="navigation">
+                
+                
+                <!-- Login or create an account -->
+                <a href="under-cunstruction.html">Login</a>&nbsp; | &nbsp;
+                <a href="under-cunstruction.html">Create Account</a>&nbsp; | &nbsp;
+                <a href="under-cunstruction.html">Shopping Cart</a>&nbsp;
+                
+                
+
+                
+            </div>
+
+        </section>
+        
+        <div class="head-banner">
+            <h1>
+                <a href="home.html">
+                    <img class="logo-as-letter" src="publix-logo2.png" alt="P">
+                </a>
+                ublix | Where shopping is a pleasure.
+            </h1>
+        </div>
+        <hr style="color: #c74c3f;">
+        
+        <!-- table to department names and phone numbers for customer to call for info/assistance. -->
+        <div class="table-float">
+            <table>
+                <caption style="padding-left: 30%;"><h2>Store Department Directory</h2></caption>
+                <thead>
+                    <tr><th>Department</th><th>Phone Number</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>Grocery</td><td>863-555-4541</td></tr>
+                    <tr><td>Dairy</td><td>863-555-4542</td></tr>
+                    <tr><td>Frozen Foods</td><td>863-555-4543</td></tr>
+                    <tr><td>Produce</td><td>863-555-4551</td></tr>
+                    <tr><td>Floral</td><td>863-555-4552</td></tr>
+                    <tr><td>Deli</td><td>863-555-4561</td></tr>
+                    <tr><td>Grocery</td><td>863-555-4541</td></tr>
+                </tbody>
+            </table>
+        </div>
+        &nbsp;
+        <hr>
+        
+        <!-- form for customer to email publix. 
+
+        I am not sure at this point what the correct usage for JavaScript in regard to the 
+
+        form data is. MVC structure is to keep the logic seperate from the UI so my thought here is that I will work on using post
+
+        for the submission rather then get to try to keep that data more secure. Not sure how to create a file path to a "back end" 
+
+        to hand off the form data to. I would want to use linux, the form data would be used to create a string for linux command:
+
+        mail -s "subject" customer-relations@publix.com 
+
+        -->
+        <h2>
+            Contact us via email
+        </h2>
+        <!-- validate user input 
+        <script language=”JavaScript”>
+
+            var formDataVal = new Validator(“customer-email”); 
+            formDataVal.addValidation(“FirstName”,”req”,”Please provide your first name”);
+            formDataVal.addValidation(“LastName”,”req”,”Please provide your last name”); 
+            formDataVal.addValidation(“EmailAddress”,”req”,”Please provide your email”); 
+            formDataVal.addValidation(“email”,”email”, “Please enter a valid email address”); </script>]
+        -->
+        
+        <div style="padding-left: 10%; padding-right: 10%;">
+            
+            <form action="mailto:publixcustomerservicepmpark@gmail.com" id="customerEmail" method="post" enctype="text/plain">
+            
+                <input type="text" name="FirstName" autocomplete="on" placeholder="First Name" size="20"> &nbsp;
+
+                <input type="text" name="LastName" autocomplete="on" placeholder="Last Name" size="20"> &nbsp;
+
+                <hr>
+
+                <input type="email" name="email" autocomplete="on" placeholder="Email Address" size="20">
+                <hr>
+
+                <input type="text" name="Subject" placeholder="Subject">
+                <hr>
+
+                <textarea id="customerEmail" name="customerEmail" placeholder="Enter message here" tabindex="0" rows="10" cols="164"></textarea>
+                
+                <!-- trying to change width of text area based on screen size. -->
+                <script>
+                    if (screen.width < 479) {
+                        document.getElementById("customerEmail").cols = "10";
+                    }
+                    else if (scree.width > 479 && screen.width < 767) {
+                         document.getElementById("customerEmail").cols = "10";
+                    }
+                </script>
+                <hr>
+                <button type="submit" value="Send">Send</button>
+                <button type="reset" value="Reset">Reset</button>
+            </form>
+
+        </div>    
+        &nbsp;
+        
+        <!-- Footer using small for fine print disclaimer, -->
+        <footer>
+            <p>
+                <small><strong>*This is not the official website of Publix Super Markets, Inc. This site is purely used for course work by Philip M. Mason at Park University.</strong></small>
+            </p>
+        </footer>
+    </body>
+    
+    
+</html>
